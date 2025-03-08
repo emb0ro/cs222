@@ -1,0 +1,17 @@
+
+<!--template/base.html-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="uft-8">
+    <title>{% block title %}Spelling Bee{% endblock %}</title>
+</head>
+<body>
+ {% include 'navbar.html' %}
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>

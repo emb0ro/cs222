@@ -1,0 +1,18 @@
+<div>
+    
+    {% url 'index' as index_url %}
+    <span>{% if request.path == index_url %}Home{% else %}<a href = "{% url 'index' %}">Home</a>{%endif%}</span>
+
+    {% url 'game_mode' as game_mode_url %}
+    <span><a href = "{% url 'game_mode' %}">Game Mode</a></span>
+
+    {% url 'practice' as practice_url %}
+    <span><a href = "{% url 'practice' %}">Practice Mode</a></span>
+
+    {% url 'login' as login_url %}
+    <span><a href = "{% url 'login' %}">Log in</a></span>
+
+    {% url 'practice_lists' as practice_lists_url %}
+    <span>Access Practice Lists <a href = "{% url 'practice_lists' %}">Here!</a></span>
+
+</div>
